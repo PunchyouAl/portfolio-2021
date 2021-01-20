@@ -36,19 +36,19 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#hero">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -112,12 +112,37 @@
         </section>
 
         <section id="contact">
-            <div class="container">
+            <div class="container flex">
                 <div class="heading">
                     <h2>GET IN TOUCH</h2>
                 </div>
+                <form action="https://formspree.io/f/mknpynnj" method="POST">
+  <label>
+    <input placeholder="Name" type="text" name="_replyto">
+  </label>
+  <label>
+    <input placeholder="Email" name="message" type="text"></input>
+  </label>
+  <label>
+    <textarea placeholder="Your message" name="message" type="text"></textarea>
+  </label>
+
+  <!-- your other form fields go here -->
+
+  <button type="submit">Send</button>
+</form>
             </div>
         </section>
+
+        <footer class="flex">
+            <div class="homeHolder"></div>
+            <div class="socialHolder">
+                <div class="social"></div>
+                <div class="social"></div>
+                <div class="social"></div>
+            </div>
+            <p>ALEX WILLIAMSON <span>2021</span></p>
+        </footer>
 
         <script src="js/script.js" async defer></script>
     </body>

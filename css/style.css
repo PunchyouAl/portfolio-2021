@@ -51,6 +51,20 @@ section {
     height: 50px;
     background-color: var(--main-bg-color);
     border-bottom: var(--highlight-color) 3px solid;
+    z-index: 2000;
+}
+
+#nav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+.nav-link {
+    color: #ffffff;
 }
 
 #hero {
@@ -84,6 +98,8 @@ section {
     text-align: center;
 }
 
+
+
 #projects .row {
     margin: 80px 0;
 }
@@ -98,11 +114,17 @@ section {
 section#about {
 
     min-height: 75vh;
-    background-image: linear-gradient(to left, #e31b6e 40%, #e31b6e62), url(../images/me.png);
+    background-image: linear-gradient(to left, #e31b6e 50%, #e31b6e62), url(../images/me.png);
     background-repeat: no-repeat;
     background-size: contain;
     clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
 
+}
+
+#about .textOuter {
+    display: flex;
+    justify-content: flex-end;
+    color: #ffffff;
 }
 
 #about .textArea {
@@ -111,4 +133,80 @@ section#about {
 
 #contact {
     text-align: center;
+}
+
+footer {
+background-color: var(--main-bg-color);
+min-height: 200px;
+position: relative;
+color: #ffffff;
+}
+
+footer p {
+opacity: 0.6;
+}
+
+footer p span {
+    color: var(--highlight-color);
+    }
+
+.homeHolder {
+    background: #e31b6d;
+    cursor: pointer;
+    font-size: 30pt;
+    height: 50px;
+    left: 0;
+    line-height: 40pt;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: -25px;
+    width: 47px;
+}
+
+.homeHolder:hover {
+    transform: translateY(-5px);
+}
+
+.socialHolder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.socialHolder .social {
+    background: #262f38;
+    cursor: pointer;
+    font-size: 18pt;
+    height: 55px;
+    margin: 0 15px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 55px;
+}
+
+.socialHolder .social:first-child {
+    margin-left: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 50px auto;
+}
+
+form input[type="text"], form textarea {
+    background: #1e242c;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    font-size: 12pt;
+    margin-bottom: 3px;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
 }
