@@ -4,157 +4,224 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Alex Williamson</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alex Williamson</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-
-        <section id="hero" class="flex">
-            
-            <div class="flex">
-                <h1>Hi.</h1>
-                <p>I'm <span>Alex Williamson</span>,</p>
-                <p>web designer and front end developer</p>
-                <a href="#projects"><div class="button">View my work<i class="fas fa-arrow-right"></i></div></a>
-            </div>
-        </section>
-
-<div id="nav">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg">
-       
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#hero">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#projects">PROJECTS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">CONTACT</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-    </div>
-</div>
-
-        
-
-        <section id="projects">
-            <div class="container">
-                <div class="heading">
-                    <h2>PROJECTS</h2>
-                </div>
-                <div class="row">
-                    <img class="col-md-6" src="images/mockups-02.png">
-                    <div class="col-md-6">
-                        <h3>Golden Griffin</h3>
-                        <p>Online presence for a leading UK property consultancy</p>
-                        <div class="buttonHolder">
-                            <a class="btn" href="">Preview</a>
-                            <a class="btn btn-secondary" href="https://www.goldengriffin.co.uk/" target="_blank">Visit Site</a>
-                        </div>
+    <div class="modal fade" id="projectsModal" tabindex="-1" aria-labelledby="projectsModalLabel" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="main-carousel">
+                        <img class="carousel-cell" src="./images/goldengriffin1.png" alt="">
+                        <img class="carousel-cell" src="./images/goldengriffin1.png" alt="">
+                        <img class="carousel-cell" src="./images/goldengriffin1.png" alt="">
+                        <img class="carousel-cell" src="./images/goldengriffin1.png" alt="">
+                        <img class="carousel-cell" src="./images/goldengriffin1.png" alt="">
+                      </div>
+                    <div class="modalTextHolder">
+                        <h2 class="modalHead"></h2>
+                        <p class="modalDesc"></p>
                     </div>
-                </div>
-                <div class="row">
-                    <img class="col-md-6" src="images/mockups-03.png">
-                    <div class="col-md-6">
-                        <h3>Pure Storage Wavemakers</h3>
-                        <p>Community and rewards site for major IT brand</p>
-                        <div class="buttonHolder">
-                            <a class="btn" href="">Preview</a>
                     
-                        </div>
-                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn">Visit Site</button>
+                    <button type="button" class="btn close">Close</button> 
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show" id="backdrop" style="display: none;"></div>
 
-        <section id="about" class="flex">
-            <div class="container">
-                <div class="textOuter">
-                    <div class="textArea">
-                        
-                        <div class="heading">
-                            <h2>ABOUT</h2>
-                        </div>
-                        
-                        <p>
-                            I have been at the forefront of CR's creation of a fully custom digital offering, completely altering the company's ability to meet their client's requirements. From scamps, to wireframes, to prototyping, to a fully operational web solution.
-                        </p>
-                        <p>
-                            I have been at the forefront of CR's creation of a fully custom digital offering, completely altering the company's ability to meet their client's requirements. From scamps, to wireframes, to prototyping, to a fully operational web solution.
-                        </p>
-                        <p>
-                            I have been at the forefront of CR's creation of a fully custom digital offering, completely altering the company's ability to meet their client's requirements. From scamps, to wireframes, to prototyping, to a fully operational web solution.
-                        </p>
-                    </div>
-                </div>
-                
-            </div>
-            
-        </section>
+    <section id="hero" class="flex">
 
-        <section id="contact">
-            <div class="container flex">
-                <div class="heading">
-                    <h2>GET IN TOUCH</h2>
-                </div>
-                <form action="https://formspree.io/f/mknpynnj" method="POST">
-  <label>
-    <input placeholder="Name" type="text" name="_replyto">
-  </label>
-  <label>
-    <input placeholder="Email" name="message" type="text"></input>
-  </label>
-  <label>
-    <textarea placeholder="Your message" name="message" type="text"></textarea>
-  </label>
-
-  <!-- your other form fields go here -->
-
-  <button class="button" type="submit">Send</button>
-</form>
-            </div>
-        </section>
-
-        <footer class="flex">
-            <a href="#hero">
-                <div class="homeHolder flex">
-                    <i class="fas fa-level-up-alt"></i>
-                </div>
+        <div class="flex">
+            <h1>Hi.</h1>
+            <p>I'm <span>Alex Williamson</span>,</p>
+            <p>web designer and front end developer</p>
+            <a href="#projects">
+                <div class="button">View my work<i class="fas fa-arrow-right"></i></div>
             </a>
-            
-            <div class="socialHolder">
-                <div class="social"></div>
-                <div class="social"></div>
-                <div class="social"></div>
+        </div>
+    </section>
+
+    <div id="nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#hero">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <section id="projects">
+        <div class="container">
+            <div class="heading">
+                <h2>PROJECTS</h2>
             </div>
-            <p>ALEX WILLIAMSON <span>2021</span></p>
-        </footer>
+            <div class="row">
+                <img class="col-md-6" src="images/goldengriffin1.png">
+                <div class="col-md-6">
+                    <h3>Golden Griffin</h3>
+                    <p>Online presence for a leading UK property consultancy</p>
+                    <div class="buttonHolder">
+                        <button class="btn btn-primary" data-toggle="modal" data-number="0">
+                            Preview
+                        </button>
+                        <a class="btn btn-secondary" href="https://www.goldengriffin.co.uk/" target="_blank">Visit
+                            Site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <img class="col-md-6" src="images/purestorage1.png">
+                <div class="col-md-6">
+                    <h3>Pure Storage Wavemakers</h3>
+                    <p>Community and rewards site for major IT brand</p>
+                    <div class="buttonHolder">
+                        <button class="btn btn-primary" data-toggle="modal" data-number="1">
+                            Preview
+                        </button>
 
-        <script src="https://kit.fontawesome.com/60f7668c00.js" crossorigin="anonymous"></script>
-        <script src="js/script.js" async defer></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </body>
+    <section id="about" class="flex">
+        <div class="container">
+            <div class="textOuter">
+                <div class="textArea">
+
+                    <div class="heading">
+                        <h2>ABOUT</h2>
+                    </div>
+
+                    <p>
+                        I have been at the forefront of CR's creation of a fully custom digital offering, completely
+                        altering the company's ability to meet their client's requirements. From scamps, to wireframes,
+                        to prototyping, to a fully operational web solution.
+                    </p>
+                    <p>
+                        I have been at the forefront of CR's creation of a fully custom digital offering, completely
+                        altering the company's ability to meet their client's requirements. From scamps, to wireframes,
+                        to prototyping, to a fully operational web solution.
+                    </p>
+                    <p>
+                        I have been at the forefront of CR's creation of a fully custom digital offering, completely
+                        altering the company's ability to meet their client's requirements. From scamps, to wireframes,
+                        to prototyping, to a fully operational web solution.
+                    </p>
+                    <div class="skillOuter">
+                        <div class="designOuter">Design
+                            <div class="devInner">
+                                <img src="./images/icons/html-5.svg" alt="">
+                                <img src="./images/icons/css-3.svg" alt="">
+                                <img src="./images/icons/javascript.svg" alt="">
+                                <img src="./images/icons/react.svg" alt="">
+                                <img src="./images/icons/bootstrap.svg" alt="">
+                                <img src="./images/icons/github.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="devOuter">
+                            Development
+                            <div class="devInner">
+                                <img src="./images/icons/html-5.svg" alt="">
+                                <img src="./images/icons/css-3.svg" alt="">
+                                <img src="./images/icons/javascript.svg" alt="">
+                                <img src="./images/icons/react.svg" alt="">
+                                <img src="./images/icons/bootstrap.svg" alt="">
+                                <img src="./images/icons/github.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <div class="container flex">
+            <div class="heading">
+                <h2>GET IN TOUCH</h2>
+            </div>
+            <form action="https://formspree.io/f/mknpynnj" method="POST">
+                <label>
+                    <input placeholder="Name" type="text" name="_replyto">
+                </label>
+                <label>
+                    <input placeholder="Email" name="message" type="text"></input>
+                </label>
+                <label>
+                    <textarea placeholder="Your message" name="message" type="text"></textarea>
+                </label>
+
+                <!-- your other form fields go here -->
+
+                <button class="button" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="flex">
+        <a href="#hero">
+            <div class="homeHolder flex">
+                <i class="fas fa-level-up-alt"></i>
+            </div>
+        </a>
+
+        <div class="socialHolder">
+            <div class="social"></div>
+            <div class="social"></div>
+            <div class="social"></div>
+        </div>
+        <p>ALEX WILLIAMSON <span>2021</span></p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/60f7668c00.js" crossorigin="anonymous"></script>
+    <script src="js/flickity.pkgd.js" async defer></script>
+    <script src="js/script.js" async defer></script>
+
+</body>
+
 </html>

@@ -1,6 +1,12 @@
 :root {
     --main-bg-color: #252935;
-    --highlight-color: #bada55;
+    --highlight-color: #e31b6e;
+}
+
+.modalOpen {
+  height: 100vh!important;
+  overflow-y: hidden!important;
+  padding-right: 15px!important;
 }
 
 .button {
@@ -176,6 +182,23 @@ section#about {
     width: 50%;
 }
 
+#about .skillOuter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+#about .skillOuter > * {
+    width: 50%;
+}
+
+#about .skillOuter > * img {
+    width: calc(25% - 15px);
+    padding: 15px;
+    padding-left: 0;
+    padding-bottom: 0;
+}
 
 #contact {
     text-align: center;
@@ -190,6 +213,7 @@ color: #ffffff;
 
 footer p {
 opacity: 0.6;
+margin-top: 20px;
 }
 
 footer p span {
@@ -293,3 +317,51 @@ form .button:hover {
     background-color: var(--highlight-color);
     border: 2px solid var(--highlight-color);
 }
+
+.modal .btn {
+    background-color: var(--highlight-color);
+    color: #ffffff;
+    border-radius: 0;
+    border: var(--highlight-color) 1px solid;
+}
+
+.modal-content {
+    border-radius: 0!important;
+    border: 0px solid transparent!important;
+}
+
+.modal-body {
+    padding: 0!important;
+}
+
+.modalTextHolder {
+    padding: 1em;
+}
+
+.flickity-viewport {
+    height: 344px!important;
+}
+
+.flickity-viewport .carousel-cell {
+    position: absolute;
+}
+
+/* .flickity-viewport .carousel-cell:nth-child(1) {
+    left: 0%!important;
+}
+
+.flickity-viewport .carousel-cell:nth-child(2) {
+    left: 72%!important;
+}
+
+.flickity-viewport .carousel-cell:nth-child(3) {
+    left: 144%!important;
+}
+
+.flickity-viewport .carousel-cell:nth-child(4) {
+    left: 216%!important;
+}
+
+.flickity-viewport .carousel-cell:nth-child(5) {
+    left: -72%!important;
+} */
