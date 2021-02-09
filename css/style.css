@@ -85,7 +85,7 @@ section {
     height: 50px;
     background-color: var(--main-bg-color);
     border-bottom: var(--highlight-color) 3px solid;
-    z-index: 2000;
+    z-index: 2;
 }
 
 #nav.fixed {
@@ -184,7 +184,7 @@ section#about {
 
 #about .skillOuter {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
 }
 
@@ -316,6 +316,16 @@ form .button {
 form .button:hover {
     background-color: var(--highlight-color);
     border: 2px solid var(--highlight-color);
+}
+
+.modal.fade {
+    opacity: 0;
+    display: block!important;
+    pointer-events: none;
+}
+
+.modal.fade .modal-content {
+    pointer-events: none;
 }
 
 .modal .btn {

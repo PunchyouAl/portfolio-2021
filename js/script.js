@@ -6,6 +6,7 @@ const hero = document.querySelector('#hero');
 const projects = document.querySelector('#projects');
 const projectPreviewButton = projects.querySelectorAll('.btn');
 const modal = document.querySelector('.modal');
+const modalContent = modal.querySelector('.modal-content');
 const backdrop = document.querySelector('.modal-backdrop');
 const closeButton = modal.querySelector('.close');
 const carousel = document.querySelector('.main-carousel');
@@ -54,17 +55,23 @@ function fillModal(data) {
 
 function openModal() {
 
-    flkty.reposition();
+    backdrop.style.opacity = 0.7;
     backdrop.style.display = "block";
-    modal.style.display = "block";
+    modal.style.pointerEvents = "auto";
+    modal.style.opacity = 1;
+    modal.style.pointerEvents = "auto";
+    modalContent.style.pointerEvents = "auto";
     modal.classList.add('show');
     toggleScrollable();
 
 }
 function closeModal() {
 
-    backdrop.style.display = "none";
-    modal.style.display = "none";
+    backdrop.style.opacity = 0;
+    backdrop.style.pointerEvents = "none";
+    modal.style.opacity = 0;
+    modal.style.pointerEvents = "none";
+    modalContent.style.pointerEvents = "none";
     modal.classList.remove('show');
     toggleScrollable()
 
@@ -73,8 +80,6 @@ function closeModal() {
 function toggleScrollable() {
     body.classList.toggle('modalOpen');
 }
-
-
 
 window.addEventListener('scroll', stickNav);
 window.addEventListener('load', stickNav);
@@ -93,7 +98,6 @@ var flkty = new Flickity( carousel, {
     cellAlign: 'center',
     contain: true,
     wrapAround: true,
-    autoPlay: true,
     adaptiveHeight: true
   });
 
