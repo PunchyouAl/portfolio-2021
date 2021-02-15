@@ -7,6 +7,7 @@ var x;
 var y;
 var count;
 
+
 function setup() {
 
   const parent = document.querySelector('#canvasHolder');
@@ -17,7 +18,7 @@ function setup() {
   let canvas = createCanvas(width, height);
   canvas.parent("#canvasHolder");
   u = 100;
-  l = 40;
+  l = 15;
   var highCount = height/80;
   var wideCount = width/80;
   count = int(highCount * wideCount);
@@ -35,11 +36,11 @@ function draw() {
   
   
   if (mouseIsPressed) {
-    background(0);
+    background(37, 41, 53);
     stroke(255,163,163);
   } else {
-    background(255,163,163);
-    stroke(255);
+    background(37, 41, 53);
+    stroke(4, 194, 201);
   }
   
   strokeWeight(5);
@@ -62,11 +63,11 @@ function Module(_x, _y) {
 }
 
 Module.prototype.update = function() {
-  if (mouseIsPressed) {
-    this.a = -20 * (atan2(mouseY-this.y, mouseX-this.x));
-  } else {
+  // if (mouseIsPressed) {
+  //   this.a = -20 * (atan2(mouseY-this.y, mouseX-this.x));
+  // } else {
     this.a = atan2(mouseY-this.y, mouseX-this.x);
-  }
+  // }
 }
 
 Module.prototype.draw2 = function() {
@@ -80,3 +81,23 @@ Module.prototype.draw2 = function() {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
+
+function toggleActiveCanvas() {
+  console.log('hi')
+  canvas.classList.toggle('active');
+}
+
+const hero = document.querySelector('#hero');
+const canvas = hero.querySelector('#canvasHolder');
+const links = hero.querySelectorAll('a');
+
+// links.addEventListener('mouseenter', toggleActiveCanvas);
+// links.addEventListener('mouseleave', toggleActiveCanvas);
+
+links.forEach(link => {
+  link.addEventListener('mouseenter', toggleActiveCanvas);
+})
+
+links.forEach(link => {
+  link.addEventListener('mouseleave', toggleActiveCanvas);
+})

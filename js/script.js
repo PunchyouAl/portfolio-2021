@@ -35,20 +35,32 @@ function handleModal() {
 function fillModal(data) {
     let i;
     const title = data.name;
+    const subtitle = data.subtitle;
     const imgs = data.images;
     const desc = data.description;
+    const link = data.link;
     const imgHolders = carousel.querySelectorAll('.carousel-cell');
     const header = modal.querySelector('.modalHead');
+    const sub = modal.querySelector('.modalSub');
     const text = modal.querySelector('.modalDesc');
+    const buttonLink = modal.querySelector('.link');
 
     for (i = 0; i < imgs.length; i++) {
         imgHolders[i].src = imgs[i];
     }
 
     header.innerHTML = title;
+    sub.innerHTML = subtitle;
     text.innerHTML = desc;
-    console.log([title, imgs, desc]);
-    console.log(imgHolders);
+
+    console.log(link);
+    
+    if (link == "none") {
+        buttonLink.classList.add("hidden");
+    } else {
+        buttonLink.classList.remove("hidden");
+        buttonLink.href = link;
+    }
     
     openModal();
 }

@@ -2,6 +2,11 @@ const navItems = [...document.querySelectorAll(".nav-item a")];
 
 function scrollHandler() {
     navLinkColor();
+    checkBar();
+}
+
+function checkBar() {
+
 }
 
 function navLinkColor() {

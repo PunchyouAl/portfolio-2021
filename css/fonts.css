@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: 700!IMPORTANT;
+}
+
+h4 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 500!IMPORTANT;
 }
 
 p, a, p a, .btn, .button, form {

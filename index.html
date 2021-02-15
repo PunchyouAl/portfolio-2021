@@ -36,12 +36,13 @@
                       </div>
                     <div class="modalTextHolder">
                         <h2 class="modalHead"></h2>
+                        <p class="modalSub"></p>
                         <p class="modalDesc"></p>
                     </div>
                     
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn">Visit Site</button>
+                    <a type="button" class="btn link">Visit Site</a>
                     <button type="button" class="btn close">Close</button> 
                 </div>
             </div>
@@ -53,7 +54,7 @@
         <div id="canvasHolder"></div>
         <div class="flex">
             <h1>Hi.</h1>
-            <p>I'm <span>Alex Williamson</span>,</p>
+            <p>I'm <a href="#about"><span>Alex Williamson</span></a>,</p>
             <p>web designer and front end developer</p>
             <a href="#projects">
                 <div class="button">View my work<i class="fas fa-arrow-right"></i></div>
@@ -184,7 +185,9 @@
         <div class="container flex">
             <div class="heading">
                 <h2>GET IN TOUCH</h2>
+                <p>Want to work on a project? Drop me a line!</p>
             </div>
+            
             <form action="https://formspree.io/f/mknpynnj" method="POST">
                 <label>
                     <input placeholder="Name" type="text" name="_replyto">
@@ -219,10 +222,10 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/60f7668c00.js" crossorigin="anonymous"></script>
-    <script src="js/flickity.pkgd.js" async defer></script>
+    <script src="js/flickity.pkgd.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>
-    <script src="./js/heroCanvas.js"></script>
-    <script src="./js/scroll.js"></script>
+    <script src="./js/heroCanvas.js" async defer></script>
+    <script src="./js/scroll.js" async defer></script>
     <script src="./dist/bundle.js" async defer></script>
 
 </body>
