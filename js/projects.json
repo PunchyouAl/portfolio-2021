@@ -4,14 +4,14 @@
             "name": "Golden Griffin",
             "subtitle": "Online presence for a leading UK property consultancy",
             "images": ["../images/goldengriffin1.png", "../images/goldengriffin1.png", "../images/goldengriffin1.png", "../images/goldengriffin1.png", "../images/goldengriffin1.png"],
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum sapien sagittis sem blandit ornare. Etiam sapien arcu, venenatis sed pretium quis, vestibulum a felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eleifend ligula ut tristique blandit. Quisque aliquam, risus eu gravida vehicula, purus lacus dignissim nulla, sed euismod tellus ipsum eget odio. Nam ornare diam ut nisl aliquet mattis. Phasellus molestie mi tristique, ultricies massa id, elementum lacus. Integer nisi augue, blandit sed orci eget, fringilla pellentesque magna. Vestibulum convallis ex in ipsum euismod hendrerit. Maecenas eu erat in diam suscipit accumsan ac id neque. Sed molestie leo quis convallis tempus. Morbi egestas mauris sed tortor accumsan ultricies. Morbi iaculis purus nec ante lacinia semper.",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum sapien sagittis sem blandit ornare. Etiam sapien arcu, venenatis sed pretium quis, vestibulum a felis.",
             "link": "https://www.goldengriffin.co.uk/"
         },
         {
             "name": "Pure Storage",
             "subtitle": "Community and rewards site for major IT brand",
             "images": ["../images/purestorage1.png", "../images/purestorage1.png", "../images/purestorage1.png", "../images/purestorage1.png", "../images/purestorage1.png"],
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum sapien sagittis sem blandit ornare. Etiam sapien arcu, venenatis sed pretium quis, vestibulum a felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eleifend ligula ut tristique blandit. Quisque aliquam, risus eu gravida vehicula, purus lacus dignissim nulla, sed euismod tellus ipsum eget odio. Nam ornare diam ut nisl aliquet mattis. Phasellus molestie mi tristique, ultricies massa id, elementum lacus. Integer nisi augue, blandit sed orci eget, fringilla pellentesque magna. Vestibulum convallis ex in ipsum euismod hendrerit. Maecenas eu erat in diam suscipit accumsan ac id neque. Sed molestie leo quis convallis tempus. Morbi egestas mauris sed tortor accumsan ultricies. Morbi iaculis purus nec ante lacinia semper.",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum sapien sagittis sem blandit ornare. Etiam sapien arcu, venenatis sed pretium quis, vestibulum a felis.",
             "link": "none"
         }
     ]
