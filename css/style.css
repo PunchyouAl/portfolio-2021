@@ -26,9 +26,9 @@ html {
 }
 
 #defaultCanvas0 {
-    min-width: 100vw!important;
+    min-width: 98vw!important;
     min-height: 100vh!important;
-    max-width: 100vw!important;
+    max-width: 99vw!important;
     max-height: 100vh!important;
 }
 
@@ -138,6 +138,7 @@ section {
     background-color: var(--main-bg-color);
     color: #ffffff;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 #hero .flex  {
