@@ -28,7 +28,7 @@ function stickNav() {
 
 function handleModal() {
     const dataset = this.dataset.number;
-    fetch("../js/projects.json")
+    fetch("./projects.json")
     .then(response => response.json())
     .then(data => fillModal(data.projects[dataset]))
 }
