@@ -10,6 +10,7 @@ const modalContent = modal.querySelector('.modal-content');
 const backdrop = document.querySelector('.modal-backdrop');
 const closeButton = modal.querySelector('.close');
 const carousel = document.querySelector('.main-carousel');
+const yearFooter = document.querySelector('#currentYear');
 
 let height = hero.getBoundingClientRect();
 
@@ -27,7 +28,7 @@ function stickNav() {
 
 function handleModal() {
     const dataset = this.dataset.number;
-    fetch("../js/projects.json")
+    fetch("/projects.json")
     .then(response => response.json())
     .then(data => fillModal(data.projects[dataset]))
 }
@@ -93,8 +94,15 @@ function toggleScrollable() {
     body.classList.toggle('modalOpen');
 }
 
+function setYear() {
+    const date = new Date();
+    const year = date.getFullYear();
+    yearFooter.innerHTML = year;
+}
+
 window.addEventListener('scroll', stickNav);
 window.addEventListener('load', stickNav);
+window.addEventListener('load', setYear);
 projectPreviewButton.forEach(btn => {btn.addEventListener('click', handleModal)});
 closeButton.addEventListener('click', closeModal);
 

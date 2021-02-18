@@ -317,6 +317,10 @@ footer p span {
     color: var(--highlight-color);
     }
 
+.footerInner {
+        margin-top: 40px;
+}
+
 .homeHolder {
     background: var(--highlight-color);
     cursor: pointer;
@@ -351,7 +355,7 @@ footer p span {
 }
 
 .socialHolder .social {
-    background: #262f38;
+    background: #3b556f;
     cursor: pointer;
     font-size: 18pt;
     height: 55px;
@@ -361,6 +365,20 @@ footer p span {
     text-align: center;
     width: 55px;
 }
+
+.socialHolder .social img {
+top: 0%;
+position: relative;
+width: 50%;
+transition-duration: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+.socialHolder .social:hover img {
+    transform: translateY(-3px);
+}
+
+
 
 .socialHolder .social:first-child {
     margin-left: 0;
