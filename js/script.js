@@ -45,7 +45,7 @@ function fillModal(data) {
     const sub = modal.querySelector('.modalSub');
     const text = modal.querySelector('.modalDesc');
     const buttonLink = modal.querySelector('.link');
-git status
+
     for (i = 0; i < imgs.length; i++) {
         imgHolders[i].src = imgs[i];
     }
