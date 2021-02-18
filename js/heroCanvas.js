@@ -87,9 +87,9 @@ function toggleActiveCanvas() {
   canvas.classList.toggle('active');
 }
 
-const hero = document.querySelector('#hero');
-const canvas = hero.querySelector('#canvasHolder');
-const links = hero.querySelectorAll('a');
+const heroTwo = document.querySelector('#hero');
+const canvas = heroTwo.querySelector('#canvasHolder');
+const links = heroTwo.querySelectorAll('a');
 
 // links.addEventListener('mouseenter', toggleActiveCanvas);
 // links.addEventListener('mouseleave', toggleActiveCanvas);
