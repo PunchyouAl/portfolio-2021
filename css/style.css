@@ -196,6 +196,12 @@ section {
     transform-origin: bottom left;
 }
 
+@media screen and (max-width: 390px) {
+    #hero .flex p span:after  {
+        display: none;
+    }
+}
+
 #hero a {
     color: #fff;
     text-decoration: none;
