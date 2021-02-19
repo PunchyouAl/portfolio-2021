@@ -401,7 +401,7 @@ form label {
     width: 100%;
 }
 
-form input[type="text"], form textarea {
+form input[type="text"], form input[type="email"], form textarea {
     background: #cdcece;
     border: 0;
     box-sizing: border-box;
