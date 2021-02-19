@@ -29,8 +29,8 @@ function stickNav() {
 function handleModal() {
     const dataset = this.dataset.number;
     fetch("./js/projects.json")
-    .then(response => response.json())
-    .then(data => fillModal(data.projects[dataset]))
+        .then(response => response.json())
+        .then(data => fillModal(data.projects[dataset]))
 }
 
 function fillModal(data) {
@@ -40,30 +40,65 @@ function fillModal(data) {
     const imgs = data.images;
     const desc = data.description;
     const link = data.link;
-    const imgHolders = carousel.querySelectorAll('.carousel-cell');
+    
     const header = modal.querySelector('.modalHead');
     const sub = modal.querySelector('.modalSub');
     const text = modal.querySelector('.modalDesc');
     const buttonLink = modal.querySelector('.link');
 
-    for (i = 0; i < imgs.length; i++) {
-        imgHolders[i].src = imgs[i];
-    }
+    amendImgHolderLength(imgs);
 
     header.innerHTML = title;
     sub.innerHTML = subtitle;
     text.innerHTML = desc;
 
     console.log(link);
-    
+
     if (link == "none") {
         buttonLink.classList.add("hidden");
     } else {
         buttonLink.classList.remove("hidden");
         buttonLink.href = link;
     }
-    
+
     openModal();
+}
+
+function amendImgHolderLength(imgs) {
+
+    const imgHolders = carousel.querySelectorAll('.carousel-cell');
+
+    if (imgHolders.length > imgs.length) {
+        // console.log(imgHolders);
+        // console.log(imgHolders.length);
+        // console.log(imgs.length);
+        // console.log("removal");
+        for (i = imgHolders.length - 1; i > imgs.length - 1; i--) {
+            flkty.remove(imgHolders[i]);
+        }
+        
+    } else if (imgHolders.length < imgs.length) {
+        // console.log(imgHolders);
+        // console.log(imgHolders.length);
+        // console.log(imgs.length);
+        // console.log("addition");
+        for (i = imgHolders.length; i < imgs.length; i++) {
+            const imgNode = document.createElement('img');
+            imgNode.className = 'carousel-cell';
+            flkty.insert( imgNode );
+        }
+    }
+
+    applyImgSrc(imgs);
+}
+
+function applyImgSrc(imgs) {
+
+    const imgHolders = carousel.querySelectorAll('.carousel-cell');
+
+    for (i = 0; i < imgs.length; i++) {
+        imgHolders[i].src = imgs[i];
+    }
 }
 
 function openModal() {
@@ -78,6 +113,7 @@ function openModal() {
     toggleScrollable();
 
 }
+
 function closeModal() {
 
     backdrop.style.opacity = 0;
@@ -103,7 +139,9 @@ function setYear() {
 window.addEventListener('scroll', stickNav);
 window.addEventListener('load', stickNav);
 window.addEventListener('load', setYear);
-projectPreviewButton.forEach(btn => {btn.addEventListener('click', handleModal)});
+projectPreviewButton.forEach(btn => {
+    btn.addEventListener('click', handleModal)
+});
 closeButton.addEventListener('click', closeModal);
 
 
@@ -113,12 +151,10 @@ window.onclick = function (event) {
     }
 }
 
-var flkty = new Flickity( carousel, {
+var flkty = new Flickity(carousel, {
     // options
     cellAlign: 'center',
     contain: true,
     wrapAround: true,
     adaptiveHeight: true
-  });
-
-  
+});

@@ -10,7 +10,7 @@
         {
             "name": "Pure Storage",
             "subtitle": "Community and rewards site for major IT brand",
-            "images": ["./images/purestorage1.png", "./images/purestorage1.png", "./images/purestorage1.png", "./images/purestorage1.png", "./images/purestorage1.png"],
+            "images": ["./images/purestorage1.png", "./images/purestorage1.png", "./images/purestorage1.png"],
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum sapien sagittis sem blandit ornare. Etiam sapien arcu, venenatis sed pretium quis, vestibulum a felis.",
             "link": "none"
         }
