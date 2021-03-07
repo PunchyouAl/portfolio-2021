@@ -11,6 +11,8 @@ const backdrop = document.querySelector('.modal-backdrop');
 const closeButton = modal.querySelector('.close');
 const carousel = document.querySelector('.main-carousel');
 const yearFooter = document.querySelector('#currentYear');
+const projectTextOuter = document.querySelectorAll('.projTextOuter');
+
 
 let height = hero.getBoundingClientRect();
 
@@ -130,6 +132,14 @@ function toggleScrollable() {
     body.classList.toggle('modalOpen');
 }
 
+function hoverProject() {
+    this.classList.add('hovering');
+}
+
+function unhoverProject() {
+    this.classList.remove('hovering');
+}
+
 function setYear() {
     const date = new Date();
     const year = date.getFullYear();
@@ -142,7 +152,14 @@ window.addEventListener('load', setYear);
 projectPreviewButton.forEach(btn => {
     btn.addEventListener('click', handleModal)
 });
+projectTextOuter.forEach(btn => {
+    btn.addEventListener('mouseenter', hoverProject)
+});
+projectTextOuter.forEach(btn => {
+    btn.addEventListener('mouseleave', unhoverProject)
+});
 closeButton.addEventListener('click', closeModal);
+
 
 
 window.onclick = function (event) {
@@ -155,6 +172,5 @@ var flkty = new Flickity(carousel, {
     // options
     cellAlign: 'center',
     contain: true,
-    wrapAround: true,
-    adaptiveHeight: true
+    wrapAround: true
 });
