@@ -70,10 +70,13 @@ html {
     border: var(--highlight-color) 1px solid;
 }
 
-.buttonHolder .btn:hover {
+.buttonHolder .btn:hover, .buttonHolder .btn:focus {
 background-color: #ffffff;
 color: var(--highlight-color);
+box-shadow: 0 0 0 0.25rem rgb(249 49 253 / 50%);
 }
+
+
 
 .buttonHolder .btn.btn-secondary {
     background-color: transparent;
@@ -274,7 +277,8 @@ section {
     padding: 90px;
     color: #ffffff;
     opacity: 0.6;
-    outline: 4px solid transparent;
+    outline: 4px solid var(--highlight-color);
+    transition: opacity 0.5s;
 }
 
 /* #projects .row .projText:after {
@@ -290,9 +294,9 @@ section {
     transition-duration: 0.5s;
 } */
 
-#projects .row .projText.active {
+#projects .row .projText.active, #projects .row .projText:hover {
     opacity: 1;
-    outline: 4px solid var(--highlight-color);
+    
 }
 
 /* #projects .row .projText.active:after {

@@ -37,9 +37,7 @@ function activeProject(pos) {
         if (pos + windowHeight/2 > offset) {
             console.log(`${gradientAngle} px`);
             item.classList.add('active');
-        } else {
-            item.classList.remove('active');
-        }
+        } 
     });
 }
 
