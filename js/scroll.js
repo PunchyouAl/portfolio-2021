@@ -26,16 +26,16 @@ function activeProject(pos) {
         const rect = item.getBoundingClientRect();
         const offset = rect.top - bodyRect.top;
         const windowHeight = window.innerHeight;
-        let gradientAngle = (offset - pos) / 6;
+        let parallaxPos = (offset - pos) * 0.2;
 
         // console.log(pos);
         // console.log(windowHeight);
         // console.log(offset);
 
-        item.style.transform = `translateY(${gradientAngle}px)`;
+        item.style.transform = `translateY(${parallaxPos}px)`;
 
-        if (pos + windowHeight/2 > offset) {
-            console.log(`${gradientAngle} px`);
+        if (pos + windowHeight*0.6 > offset) {
+            console.log(`${parallaxPos} px`);
             item.classList.add('active');
         } 
     });

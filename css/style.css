@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
   }
 
+  img {
+      max-width: 100%;
+  }
+
 .modalOpen {
   height: 100vh!important;
   overflow-y: hidden!important;
@@ -320,18 +324,76 @@ section {
 section#about {
 
     min-height: 75vh;
-    background-image: linear-gradient(to left, #e31b6e 30%, #e31b6e62 60%), url(../images/me.png);
+    background: #e31b6e;
     background-repeat: no-repeat;
     background-size: contain;
     clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+    position: relative;
 
 }
 
 @media screen and (max-width: 991px) {
     section#about {
-        background-image: linear-gradient(to bottom, #e31b6e62 30%, #e31b6e 60%), url(../images/me.png);
+        background: #e31b6e;
         padding-top: 300px;
     }
+}
+
+#about .imgArea {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.bubble#one {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to bottom, var(--highlight-color), var(--main-bg-color));
+    position: absolute;
+    border-radius: 100%;
+    right: -250px;
+    top: 55%;
+    animation-name: bob;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    filter: blur(2px);
+}
+
+.bubble#two {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: linear-gradient(to bottom, var(--highlight-color), var(--main-bg-color));
+    border-radius: 100%;
+    top: 50px;
+    left: 50px;
+    z-index: -1;
+    animation-name: bob;
+    animation-delay: 1.7s;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    filter: blur(5px);
+}
+
+.bubble#three {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background: linear-gradient(to bottom, var(--highlight-color), var(--main-bg-color));
+    border-radius: 100%;
+    top: 170px;
+    right: 0px;
+    z-index: -1;
+    animation-name: bob;
+    animation-delay: 1.2s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    filter: blur(2px);
 }
 
 #about .heading:after {
@@ -617,4 +679,11 @@ form .button:hover {
 
  .main-carousel .flickity-button.flickity-prev-next-button.next:hover .flickity-button-icon {
     transform: translateX(5px);
+ }
+
+
+ @keyframes bob {
+     0% {transform: translateY(0);}
+     50% {transform: translateY(-30px);}
+     100% {transform: translateY(0);}
  }
