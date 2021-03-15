@@ -329,15 +329,25 @@ section#about {
     background-size: contain;
     clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
     position: relative;
+    overflow: hidden;
 
 }
 
 @media screen and (max-width: 991px) {
     section#about {
         background: #e31b6e;
-        padding-top: 300px;
+        padding-top: 70px;
+        justify-content: flex-start;
     }
 }
+
+@media screen and (max-width: 767px) {
+    section#about {
+        padding-bottom: 75px;
+    }
+}
+
+
 
 #about .imgArea {
     width: 50%;
@@ -345,21 +355,69 @@ section#about {
     left: 0;
     top: 0;
     z-index: -1;
+    height: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+    #about .imgArea {
+        width: 60%;
+
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #about .imgArea {
+        width: 60%;
+        right: 0;
+        left: unset;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #about .imgArea {
+        width: 100%;
+        right: 0;
+        left: unset;
+    }
+}
+
+
+
+#about .imgArea img {
+    max-height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    #about .imgArea img {
+        right: -120px;
+    }
+
+}
+
+
 .bubble#one {
-    width: 400px;
-    height: 400px;
+    width: 420px;
+    height: 420px;
     background: linear-gradient(to bottom, var(--highlight-color), var(--main-bg-color));
     position: absolute;
     border-radius: 100%;
-    right: -250px;
-    top: 55%;
+    right: -210px;
+    bottom: -30px;
     animation-name: bob;
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     filter: blur(2px);
+}
+
+@media screen and (max-width: 767px) {
+    .bubble#one {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .bubble#two {
@@ -424,9 +482,22 @@ section#about {
     margin-top: 50px;
 }
 
+@media screen and (max-width: 991px) {
+    #about .skillOuter {
+        flex-direction: column;
+    }
+
+}
+
 
 #about .skillOuter > * {
     width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+    #about .skillOuter > *:last-child {
+        margin-top: 25px;
+    }
 }
 
 #about .skillOuter > * img {
@@ -434,6 +505,12 @@ section#about {
     padding: 15px;
     padding-left: 0;
     padding-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    #about .skillOuter > * img {
+        width: calc(50% - 15px);
+    }
 }
 
 .devInner {

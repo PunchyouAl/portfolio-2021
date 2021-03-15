@@ -35,7 +35,7 @@ function activeProject(pos) {
         item.style.transform = `translateY(${parallaxPos}px)`;
 
         if (pos + windowHeight*0.6 > offset) {
-            console.log(`${parallaxPos} px`);
+            // console.log(`${parallaxPos} px`);
             item.classList.add('active');
         } 
     });
