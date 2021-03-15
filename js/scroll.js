@@ -32,7 +32,13 @@ function activeProject(pos) {
         // console.log(windowHeight);
         // console.log(offset);
 
-        item.style.transform = `translateY(${parallaxPos}px)`;
+        if (window.width > 991) {
+            item.style.transform = `translateY(${parallaxPos}px)`;
+        } else {
+            item.style.transform = `translateY(0px)`;
+        }
+
+        
 
         if (pos + windowHeight*0.6 > offset) {
             // console.log(`${parallaxPos} px`);
