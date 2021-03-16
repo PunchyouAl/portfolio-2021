@@ -303,7 +303,7 @@ section {
         position: relative;
         width: 100%;
         z-index: -1;
-        transform: translateY(-20%);
+        transform: translateY(-20%);#
     }
 }
 
@@ -492,7 +492,7 @@ section#about {
     animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    filter: blur(5px);
+    filter: blur(4px);
 }
 
 .bubble#three {
