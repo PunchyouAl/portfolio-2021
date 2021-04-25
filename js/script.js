@@ -146,9 +146,26 @@ function setYear() {
     yearFooter.innerHTML = year;
 }
 
+function preloadImages()
+{
+    // const dataset = this.dataset.number;
+    fetch("./js/projects.json")
+        .then(response => response.json())
+        .then(data => data.projects.forEach(
+            item => item.forEach( imgStr => {
+                const img=new Image();
+                img.src=imgStr;
+                console.log(img);
+            }
+            )
+        ))
+
+}
+
 window.addEventListener('scroll', stickNav);
 window.addEventListener('load', stickNav);
 window.addEventListener('load', setYear);
+window.addEventListener('load', preloadImages);
 projectPreviewButton.forEach(btn => {
     btn.addEventListener('click', handleModal)
 });
