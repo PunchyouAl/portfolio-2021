@@ -85,9 +85,7 @@ function amendImgHolderLength(imgs) {
         // console.log(imgs.length);
         // console.log("addition");
         for (i = imgHolders.length; i < imgs.length; i++) {
-            const imgNode = document.createElement('div');
-            const image = document.createElement('img');
-            imgNode.appendChild(image);
+            const imgNode = document.createElement('img');
             imgNode.className = 'carousel-cell';
             flkty.insert(imgNode);
         }
@@ -101,7 +99,7 @@ function applyImgSrc(imgs) {
     const imgHolders = carousel.querySelectorAll('.carousel-cell');
 
     for (i = 0; i < imgs.length; i++) {
-        imgHolders[i].children.src = imgs[i];
+        imgHolders[i].src = imgs[i];
     }
 }
 
