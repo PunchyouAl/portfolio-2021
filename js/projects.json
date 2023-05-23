@@ -3,35 +3,39 @@
             "name": "Golden Griffin",
             "subtitle": "Online presence and branding for a UK property consultancy",
             "images": ["./images/projects/Golden/BlkHome.png", "./images/projects/Golden/Home.png", "./images/projects/Golden/montage.png", "./images/projects/Golden/contact.png"],
-            "description": "Golden Griffin is an property consultancy, specialising in London commercial property. I was asked to build a high-end brand and online web presence for them. Taking two of the main attributes of the mythical griffin, the eagle's head and the lion's tail, I crafted a new logo that evokes the letter 'G'.",
+            "description": "
+            Golden Griffin is a highly esteemed property consultancy specializing in London 's commercial real estate sector. Entrusted with the task of crafting a sophisticated brand and establishing an impactful online presence for the firm, I aimed to design a logo that captured the essence of the griffin. Drawing inspiration from the eagle'
+            s head and the lion 's tail, I merged these defining attributes into a refined emblem that evokes the letter '
+            G '. This distinctive logo not only pays tribute to the griffin'
+            s enduring symbolism but also reflects the excellence and prestige synonymous with Golden Griffin 's services.",
             "link": "https://www.goldengriffin.co.uk/"
         },
         {
             "name": "Pure Storage",
             "subtitle": "Community and rewards site for major IT brand",
             "images": ["./images/projects/Pure/pure_home.png", "./images/projects/Pure/pure_dynamic.png", "./images/projects/Pure/pure_splash.png", "./images/projects/Pure/pure_badges.png"],
-            "description": "Wavemakers is an exciting addition to Pure Storage's esteemed brand ambassador program. I worked with Pure to design and develop the site, with particular focus on a 'breadcrumb' philosophy, where users are consistently guided to the next recommended action or learning.",
+            "description": "Wavemakers was created as an addition to Pure Storage's esteemed brand ambassador program. Collaborating closely with Pure, I assumed the responsibility of envisioning and materializing the website, with a distinct emphasis on implementing a 'breadcrumb' philosophy. This approach ensures users are seamlessly guided towards their next optimal action or learning experience, fostering a fluid and intuitive journey throughout the site.",
             "link": "none"
         },
         {
             "name": "Hoover Powerpoints",
             "subtitle": "Sales Incentive platform for UK & Ireland",
             "images": ["./images/projects/Hoover/Hoover_Home.png", "./images/projects/Hoover/Hoover_Store.png", "./images/projects/Hoover/Hoover_Montage.png", "./images/projects/Hoover/Hoover_Ireland.png"],
-            "description": "Points redemption programme for one of the UK's most recognisable brands. Hoover required a website to allow ",
+            "description": "I was entrusted with the development of a points redemption program catering to one of the most iconic brands in the UK, Hoover. Our primary objective was to create a user-friendly website that enables individuals to log sales, accumulate points, and effortlessly redeem them for a diverse range of rewards. It was of utmost importance to align the design and functionality of the website with Hoover's iconic brand, ensuring a seamless and immersive experience that resonates with their loyal customer base.",
             "link": "none"
         },
         {
             "name": "University of Reading",
             "subtitle": "Recognition and points banking for UK education institute",
             "images": ["./images/projects/Reading/Reading_Home.png", "./images/projects/Reading/Reading_Card.png", "./images/projects/Reading/Reading_Noms.png", "./images/projects/Reading/Reading_Montage.png"],
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum sapien sagittis sem blandit ornare. Etiam sapien arcu, venenatis sed pretium quis, vestibulum a felis.",
+            "description": "A recognition site for the employees of Reading University. The objective was to capture the essence of their values in a visually striking and straightforward manner. I developed clean and highly iconic visuals that authentically reflected the university's core principles. These visuals were subsequently implemented across the entire organization as an integral element of their corporate branding.",
             "link": "none"
         },
         {
             "name": "CarbonShift",
             "subtitle": "Branding for an environmental consultancy startup.",
             "images": ["./images/projects/Carbonshift/carbon_logo.png", "./images/projects/Carbonshift/carbon_treatments.png", "./images/projects/Carbonshift/carbon_logic.png", "./images/projects/Carbonshift/carbon_gradient.png"],
-            "description": "I was tasked with devising a simple, versatile logo for a startup company. I combined an abstraction of the letters that represent the business (C+S) within a circle that represents the carbon cycle. The colours are representative of the earth, as this company is in the eco sector.",
+            "description": "I was tasked with devising a simple, versatile logo for a startup company. I combined an abstraction of the letters that represent the business (C+S) within a circle that represents the carbon cycle. The colours are representative of the earth, as this company is in the eco sector. The resulting logo harmonizes the core elements of the business, capturing its identity, values, and dedication to environmental sustainability.",
             "link": "none"
         }
     ]
