@@ -2,7 +2,7 @@
     "projects": [{
             "name": "Golden Griffin",
             "subtitle": "Online presence and branding for a UK property consultancy",
-            "images": ["./images/projects/Hoover/Hoover_Home.png", "./images/projects/Hoover/Hoover_Store.png", "./images/projects/Hoover/Hoover_Montage.png", "./images/projects/Hoover/Hoover_Ireland.png"],
+            "images": ["./images/projects/Golden/BlkHome.png", "./images/projects/Golden/Home.png", "./images/projects/Golden/main.png", "./images/projects/Golden/montage.png", "./images/projects/Golden/contact.png"],
             "description": "Golden Griffin is an property consultancy, specialising in London commercial property. I was asked to build a high-end brand and online web presence for them. Taking two of the main attributes of the mythical griffin, the eagle's head and the lion's tail, I crafted a new logo that evokes the letter 'G'.",
             "link": "https://www.goldengriffin.co.uk/"
         },
