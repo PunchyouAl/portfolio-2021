@@ -9,8 +9,8 @@
         {
             "name": "Pure Storage",
             "subtitle": "Community and rewards site for major IT brand",
-            "images": ["./images/projects/Hoover/Hoover_Home.png", "./images/projects/Hoover/Hoover_Store.png", "./images/projects/Hoover/Hoover_Montage.png", "./images/projects/Hoover/Hoover_Ireland.png"],
-            "description": "Expanding on Pure Storage's existing ",
+            "images": ["./images/projects/Pure/pure_home.png", "./images/projects/Pure/dynamic.png", "./images/projects/Pure/pure_splash.png", "./images/projects/Pure/pure_badges.png"],
+            "description": "Wavemakers is an exciting addition to Pure Storage's esteemed brand ambassador program. I worked with Pure to design and develop the site, with particular focus on a 'breadcrumb' philosophy, where users are consistently guided to the next recommended action or learning.",
             "link": "none"
         },
         {
