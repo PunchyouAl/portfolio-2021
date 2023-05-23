@@ -17,7 +17,7 @@
             "name": "Hoover Powerpoints",
             "subtitle": "Sales Incentive platform for UK & Ireland",
             "images": ["./images/projects/Hoover/Hoover_Home.png", "./images/projects/Hoover/Hoover_Store.png", "./images/projects/Hoover/Hoover_Montage.png", "./images/projects/Hoover/Hoover_Ireland.png"],
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum sapien sagittis sem blandit ornare. Etiam sapien arcu, venenatis sed pretium quis, vestibulum a felis.",
+            "description": "Points redemption programme for one of the UK's most recognisable brands. Hoover required a website to allow ",
             "link": "none"
         },
         {
@@ -25,6 +25,13 @@
             "subtitle": "Recognition and points banking for UK education institute",
             "images": ["./images/projects/Reading/Reading_Home.png", "./images/projects/Reading/Reading_Card.png", "./images/projects/Reading/Reading_Noms.png", "./images/projects/Reading/Reading_Montage.png"],
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum sapien sagittis sem blandit ornare. Etiam sapien arcu, venenatis sed pretium quis, vestibulum a felis.",
+            "link": "none"
+        },
+        {
+            "name": "CarbonShift",
+            "subtitle": "Branding for an environmental consultancy startup.",
+            "images": ["./images/projects/Carbonshift/carbon_logo.png", "./images/projects/Carbonshift/carbon_treatments.png", "./images/projects/Carbonshift/carbon_logic.png", "./images/projects/Carbonshift/carbon_gradient.png"],
+            "description": "I was tasked with devising a simple, versatile logo for a startup company. I combined an abstraction of the letters that represent the business (C+S) within a circle that represents the carbon cycle. The colours are representative of the earth, as this company is in the eco sector.",
             "link": "none"
         }
     ]
