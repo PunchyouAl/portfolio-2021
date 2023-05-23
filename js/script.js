@@ -42,7 +42,7 @@ function fillModal(data) {
     const imgs = data.images;
     const desc = data.description;
     const link = data.link;
-    
+
     const header = modal.querySelector('.modalHead');
     const sub = modal.querySelector('.modalSub');
     const text = modal.querySelector('.modalDesc');
@@ -54,7 +54,7 @@ function fillModal(data) {
     sub.innerHTML = subtitle;
     text.innerHTML = desc;
 
-    console.log(link);
+    console.log(text);
 
     if (link == "none") {
         buttonLink.classList.add("hidden");
@@ -78,7 +78,7 @@ function amendImgHolderLength(imgs) {
         for (i = imgHolders.length - 1; i > imgs.length - 1; i--) {
             flkty.remove(imgHolders[i]);
         }
-        
+
     } else if (imgHolders.length < imgs.length) {
         // console.log(imgHolders);
         // console.log(imgHolders.length);
@@ -87,7 +87,7 @@ function amendImgHolderLength(imgs) {
         for (i = imgHolders.length; i < imgs.length; i++) {
             const imgNode = document.createElement('img');
             imgNode.className = 'carousel-cell';
-            flkty.insert( imgNode );
+            flkty.insert(imgNode);
         }
     }
 
@@ -146,20 +146,19 @@ function setYear() {
     yearFooter.innerHTML = year;
 }
 
-function preloadImages()
-{
+function preloadImages() {
     // const dataset = this.dataset.number;
     fetch("./js/projects.json")
         .then(response => response.json())
         .then(data => data.projects.forEach(
-            item => item.forEach( imgStr => {
-                const img=new Image();
-                img.src=imgStr;
-                console.log(img);
+            item => {
+                const imgList = item.images;
+                imgList.forEach(imgStr => {
+                    const img = new Image();
+                    img.src = imgStr;
+                })
             }
-            )
         ))
-
 }
 
 window.addEventListener('scroll', stickNav);
@@ -179,7 +178,7 @@ closeButton.addEventListener('click', closeModal);
 
 
 
-window.onclick = function (event) {
+window.onclick = function(event) {
     if (event.target == modal) {
         closeModal()
     }
